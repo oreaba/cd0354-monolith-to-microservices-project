@@ -22,13 +22,11 @@ script:
   - docker build -t udagram-frontend ./udagram-frontend
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
 
-
 # Tagging
   - docker tag udagram-api-feed  oreaba/udagram-api-feed:v1
   - docker tag udagram-api-user  oreaba/udagram-api-user:v1
   - docker tag udagram-frontend  oreaba/udagram-frontend:v1
   - docker tag udagram-reverseproxy oreaba/udagram-reverseproxy:v1
-
 
 # Push
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
