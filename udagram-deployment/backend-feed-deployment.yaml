@@ -15,7 +15,7 @@ spec:
         service: backend-feed
     spec:
       containers:
-      - image: docker.io/oreaba/udagram-api-feed:v1
+      - image: docker.io/oreaba/udagram-api-feed:v2
         name: backend-feed
         imagePullPolicy: Always  
         env:

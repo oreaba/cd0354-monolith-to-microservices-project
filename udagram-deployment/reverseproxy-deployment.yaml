@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: docker.io/oreaba/udagram-reverseproxy:v1
+      - image: docker.io/oreaba/udagram-reverseproxy:v2
         name: reverseproxy
         imagePullPolicy: Always          
         resources:
