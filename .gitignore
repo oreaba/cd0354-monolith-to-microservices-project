@@ -2,6 +2,8 @@
 # http://git-scm.com/docs/gitignore
 
 set_env.sh
+aws-secret.yaml
+env-secret.yaml
 
 *~
 *.sw[mnpcod]
