@@ -15,7 +15,7 @@ spec:
         service: backend-user
     spec:
       containers:
-      - image: docker.io/oreaba/udagram-api-user:v2
+      - image: docker.io/oreaba/udagram-api-user:v3
         name: backend-user 
         imagePullPolicy: Always
         resources:
