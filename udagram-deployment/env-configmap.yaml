@@ -9,5 +9,5 @@ data:
   AWS_REGION: us-east-1
   AWS_BUCKET: project3-oreaba-dev
   JWT_SECRET: testing
-  URL: http://localhost:8100
+  URL: http://ab28f606e54fd4391b234ad995e133b8-898260875.us-east-1.elb.amazonaws.com
 
