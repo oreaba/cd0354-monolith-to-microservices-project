@@ -17,7 +17,14 @@ spec:
       containers:
       - image: docker.io/oreaba/udagram-api-feed:v2
         name: backend-feed
-        imagePullPolicy: Always  
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "2024Mi"   
+            cpu: "250m"
+          limits:
+            memory: "5024Mi"   
+            cpu: "500m"
         env:
         - name: POSTGRES_HOST
           valueFrom:
