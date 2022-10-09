@@ -23,17 +23,17 @@ script:
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
 
 # Tagging
-  - docker tag udagram-api-feed  oreaba/udagram-api-feed:v1
-  - docker tag udagram-api-user  oreaba/udagram-api-user:v1
-  - docker tag udagram-frontend  oreaba/udagram-frontend:v1
-  - docker tag udagram-reverseproxy oreaba/udagram-reverseproxy:v1
+  - docker tag udagram-api-feed  oreaba/udagram-api-feed:v2
+  - docker tag udagram-api-user  oreaba/udagram-api-user:v2
+  - docker tag udagram-frontend  oreaba/udagram-frontend:v2
+  - docker tag udagram-reverseproxy oreaba/udagram-reverseproxy:v2
 
 # Push
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push oreaba/udagram-api-feed:v1 
-  - docker push oreaba/udagram-api-user:v1
-  - docker push oreaba/udagram-frontend:v1 
-  - docker push oreaba/udagram-reverseproxy:v1
+  - docker push oreaba/udagram-api-feed:v2
+  - docker push oreaba/udagram-api-user:v2
+  - docker push oreaba/udagram-frontend:v2 
+  - docker push oreaba/udagram-reverseproxy:v2
 
 after_success:
   - echo "no tests"
